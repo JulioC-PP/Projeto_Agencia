@@ -1,0 +1,266 @@
+/* CABEÇALHO */
+
+.cabecalho .logo .imagem {
+    width: 100px;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+}
+
+.logo .imagem{
+    width: 100px;
+}
+
+.logo .titulo {
+    margin-left: 7px;
+    font-size: 17px;
+    transition: 0.3s ease-in-out;
+    font-weight: 800;
+}
+
+.logo .titulo:hover {
+    color: #203D7F;
+}
+
+.cabecalho .navegacao .menu {
+    display: flex;
+}
+
+.cabecalho .navegacao .menu .item{
+    margin: 10px;
+}
+
+.cabecalho .navegacao .menu .item a{
+    padding: 15px;
+    transition: 0.3s ease-in-out;
+}
+
+.cabecalho .navegacao .menu .item a:hover{
+    background-color: #203D7F;
+    color: white;
+    border-radius: 0 50%;
+}
+
+/* CABEÇALHO */
+
+/* PAINEL */
+
+img {
+    max-width: 100%;
+}
+
+.conteudo-principal .paineis {
+    position: relative;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-principal .paineis .imagem-painel {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: brightness(70%);
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+    font-size: 20px;
+}
+
+.conteudo-principal .paineis .projeto1 {
+    background-image: url('../imagens/mural.jpg');
+}
+
+.conteudo-principal .paineis .projeto2 {
+    background-image: url('../imagens/disney.jpg');
+}
+
+.conteudo-principal .paineis .projeto3 {
+    background-image: url('../imagens/hungria.jpg');
+}
+
+.conteudo-principal .paineis .projeto4 {
+    background-image: url('../imagens/paris.jpg');
+}
+
+.conteudo-principal .paineis .imagem-painel.mostrar {
+    opacity: 1;
+}
+
+.conteudo-principal .paineis .titulo {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: calc(1em + 1vw);
+    opacity: 70%;
+}
+
+
+
+.conteudo-principal .paineis .seta {
+    background-image: url('../imagens/seta.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    text-indent: 100%;
+    overflow: hidden;
+    opacity: 30%;
+    transition: 0.5s;
+    scroll-snap-stop: always;
+    
+}
+
+.conteudo-principal .paineis .seta:hover {
+    opacity: 100%;
+
+}
+
+.conteudo-principal .paineis .seta.btn-voltar {
+    left: 20px;
+    transform: rotateY(180deg);
+}
+
+.conteudo-principal .paineis .seta.btn-avancar{
+    right: 20px;
+}
+
+/* PAINEL */
+
+/* QUEM SOMO */
+
+.quem-somos {
+    background-color: #203D7F;
+}
+
+.quem-somos .conteudo {
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.quem-somos .conteudo .informacoes {
+    width: 40%;
+}
+
+.quem-somos .conteudo .imagem {
+    width: 60%;
+}
+
+.quem-somos .conteudo .informacoes .titulo {
+    font-size: 50px;
+    color: #87A5EB;
+    margin-bottom: 20px;  
+}
+
+.quem-somos .conteudo .informacoes .texto {
+    font-size: 20px;
+
+    line-height: 1.5;
+    color: #fffafa;
+    font-weight: 400;
+
+}
+
+/* QUEM SOMO */
+
+/* RODAPÉ */
+
+.rodape {
+    padding: 80px 0 20px 0;
+}
+
+.rodape .navegacao {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.rodape .redes-sociais {
+    display: flex;
+}
+
+.rodape .redes-sociais a {
+    display: flex;
+    justify-content: center;
+    margin: 0 10px;
+    font-size: 30px;
+    border: 2px solid #111;
+    border-radius: 50%;
+    padding: 15px;
+    width: 65px;
+    height: 65px;
+    transition: 0.5s;
+}
+
+.rodape .redes-sociais .facebook:hover {
+    background-color: #0866FF;
+    border: #fff;
+}
+
+.rodape .redes-sociais .whatsapp:hover {
+    background-color: #00A884;
+    border: #fff;
+}
+
+.rodape .redes-sociais .instagram:hover {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    border: #fff;
+}
+
+.rodape .navegacao .logo .imagem {
+    width: 100px;
+}
+
+.rodape .localizacao {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0 0 100px;
+}
+
+.rodape .localizacao .titulo {
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+
+.rodape .localizacao .mapa {
+    max-width: 400px;
+    transition: 0.5s;
+}
+
+.rodape .localizacao .mapa:hover {
+    padding: 2px;
+    color: #203D7F;
+    border: 2px solid #203D7F ;
+}
+
+.rodape .copyright {
+    margin-top: 70px;
+    text-align: center;
+}
+
+/* RODAPÉ */
