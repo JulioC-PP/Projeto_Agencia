@@ -249,7 +249,7 @@ img {
 
 .rodape .localizacao .mapa {
     max-width: 400px;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .rodape .localizacao .mapa:hover {
